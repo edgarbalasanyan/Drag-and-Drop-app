@@ -1,0 +1,56 @@
+@import '../styles/variables';
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+h1{
+  font-size: 3.5rem;
+  color: whitesmoke;
+}
+.columns{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.columnContainer {
+  background-color: $columnBackground;
+  border-radius: 8px;
+  padding: 10px;
+  width: 25%; 
+  height: 70vh;
+  overflow-y: auto;
+}
+
+.boardTitle {
+  text-align: center;
+  color: $textColor;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.itemContainer {
+  margin-bottom: 10px;
+}
+
+.item {
+  text-align: center;
+  background-color: $itemBckground;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: grab;
+  transition: box-shadow 0.3s ease-in-out;
+  user-select: none;
+  &:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+
